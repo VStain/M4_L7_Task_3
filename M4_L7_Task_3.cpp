@@ -2,6 +2,8 @@
 #include <string>
 #include <cmath>
 #include "Class_Figure.h"
+#include "Class_Triangle.h"
+#include "Class_RightTriangle.h"
 
 using namespace std;
 

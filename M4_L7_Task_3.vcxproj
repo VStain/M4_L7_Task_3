@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Class_Figure.cpp" />
+    <ClCompile Include="Class_RightTriangle.h.cpp" />
+    <ClCompile Include="Class_Triangle.cpp" />
     <ClCompile Include="M4_L7_Task_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class_Figure.h" />
+    <ClInclude Include="Class_RightTriangle.h" />
+    <ClInclude Include="Class_Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
