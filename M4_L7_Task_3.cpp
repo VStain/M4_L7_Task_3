@@ -1,9 +1,14 @@
-﻿#include <iostream>
-#include <string>
-#include <cmath>
+﻿#include <cmath>
 #include "Class_Figure.h"
 #include "Class_Triangle.h"
 #include "Class_RightTriangle.h"
+#include "Isosceles_Triangle .h"
+#include "Equilateral_Triangle.h"
+#include "Quadrangle.h"
+#include "Rectangle.h"
+#include "Square.h"
+#include "Parallelogram.h"
+#include "Rhomb.h"
 
 using namespace std;
 

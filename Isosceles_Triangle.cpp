@@ -1,14 +1,15 @@
-#include "Class_RightTriangle.h"
+#include "Isosceles_Triangle .h"
 
-
-Right_Triangle::Right_Triangle(int a_side, int b_side, int A_angle, int B_angle)
+Isosceles_Triangle::Isosceles_Triangle(int a_side, int b_side, int A_angle, int B_angle)
     : Triangle(a_side, b_side, sqrt(a_side* a_side + b_side * b_side), A_angle, B_angle)
 {
-    name = "Прямоугольный треугольник";
-    this->C_angle = 90;
+    name = "Равнобедренный треугольник ";
+    c_side = a_side;
+    C_angle = 180 - A_angle - B_angle;
+    a_side = c_side;
+    A_angle = C_angle;
 }
-
-void Right_Triangle::Print_info()
+void Isosceles_Triangle::Print_info()
 {
     cout << "Название фигуры: " << name << endl;
     cout << (check() ? "Правильная" : "Неправильная") << endl;
@@ -16,13 +17,14 @@ void Right_Triangle::Print_info()
     cout << "Стороны: a = " << a_side << " b = " << b_side << " c = " << c_side << endl;
     cout << "Углы: A = " << A_angle << " B = " << B_angle << " C = " << C_angle << endl << endl;
 }
-bool Right_Triangle::check()
+
+bool Isosceles_Triangle::check()
 {
     if (!Triangle::check())
     {
         return false;
     }
-    if (C_angle != 90)
+    if (c_side != a_side && A_angle != C_angle)
     {
         return false;
     }
