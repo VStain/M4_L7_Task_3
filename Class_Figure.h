@@ -16,7 +16,6 @@ public:
 protected:
     int sides_count = 0;
     string name;
-
 };
 
 void Print_info(Figure* figure);

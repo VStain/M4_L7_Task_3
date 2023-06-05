@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Class_Figure.h"
-#include "Quadrangle.h"
 
 class Quadrangle :public Figure
 {

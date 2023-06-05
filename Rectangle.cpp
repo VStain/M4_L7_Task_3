@@ -34,14 +34,3 @@ bool Rectangle::check()
     return true;
 }
 
-Square::Square(int a_side, int A_angle)
-    : Quadrangle(a_side, b_side, c_side, d_side, A_angle, B_angle, C_angle, D_angle)
-{
-    name = " вадрат ";
-    sides_count = 4;
-    b_side = c_side = d_side = a_side;
-    A_angle = 90;
-    B_angle = 90;
-    C_angle = 90;
-    D_angle = 90;
-}
